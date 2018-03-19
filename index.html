@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Fandeska Laundry</title>
+    <link href="css/style.css" rel="stylesheet">
+
+    <style type="text/css" rel="stylesheet">
+ 		
+ 		.slideanim {visibility:hidden;}
+ 			.slide {
+ 				animation-name: slide;
+ 				-webkit-animation-name: slide;
+ 				animation-duration: 1s;
+ 				-webkit-animation-duration: 1s;
+ 				visibility: visible;	
+ 			}
+ 				@keyframes slide {
+ 				0% {
+ 					opacity: 0;
+ 					-webkit-transform: translateY(70%);
+ 				}
+ 				100% {
+ 					opacity: 1;
+ 					-webkit-transform: translateY(0%);
+ 				}
+ 			}
+ 			@-webkit-keyframes slide {
+ 				0% {
+ 					opacity: 0;
+ 					-webkit-transform: translateY(70%);
+ 				}
+ 				100% {
+ 					opacity: 1;
+ 					-webkit-transform: translateY(0%);
+ 				}
+ 			}
+
+
+ 		</style>
+
+    <link href="css/slicknav.min.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="image/icon.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Roboto" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="js/caroufredsel.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  </head>
+
+  <script>
+
+ 			function validate()
+ 			{
+
+ 				var fandeska= document.getElementById("fandeska");
+ 				var name=document.getElementById("name").value;
+ 				var handphone=document.getElementById("handphone").value;
+ 				var email=document.getElementById("email").value;
+ 				
+ 					if(name == "" || handphone == "" || email == "")
+ 					{
+ 						fandeska.innerHTML="<span style='color:red;font-weight:bold;'>Please fill all the requirement</span>";
+ 					}
+
+ 					else if(name.length <3)
+ 					{
+ 						fandeska.innerHTML="<span style='color:red;font-weight:bold;'>Your name is too short</span>";
+ 					}
+
+ 					else if(handphone.length <3)
+ 					{
+ 						fandeska.innerHTML="<span style='color:red;font-weight:bold;'>Your no. handphone is too short</span>";
+ 					}
+
+ 					else if(email.length <3)
+ 					{
+ 						fandeska.innerHTML="<span style='color:red;font-weight:bold;'>Your email is too short</span>";
+ 					}
+
+ 					else
+ 					{
+ 						fandeska.innerHTML="<span style='color:green;font-weight:bold;'>Your messages has been submitted successfully!</span>";
+ 					}
+
+ 			}	
+
+
+
+ 		</script>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <div class="row">
+          <a href="#home" class="logo"><img src="image/logo.png"></a>
+          <nav>
+            <ul class="menu" id="menu">
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#ourservices">OUR SERVICES</a></li>
+              <li><a href="#ourprices">OUR PRICES</a></li>
+              <li><a href="#testimonials">TESTIMONIALS</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+<!-- Nav -->
+
+  <section class="home" id="home">
+    <ul class="slider-carousel" id="slider-carousel">
+      <li class="img1 text-center white">
+        <h1>FANDESKA LAUNDRY</h1>
+      </li>
+      <li class="img2 text-center white">
+        <h1>FANDESKA LAUNDRY</h1>
+      </li>
+      <li class="img3 text-center white">
+        <h1>FANDESKA LAUNDRY</h1>
+      </li>
+    </ul>
+  </section>
+
+<!-- Header --> 
+
+	<section class="about" id="about">
+		<div class="container">
+			<div class="row">				
+				<h1 class="text-center text-uppercase">About</h1>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<img src="image/about.png" class="img-responsive">
+				</div>
+				<div class="col-md-6">
+					<h2 class="text-center"><b>Fandeska Laundry</b></h2><br>
+					<p class="text-justify">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique sollicitudin orci, ut laoreet velit facilisis quis. Morbi egestas magna non felis egestas tristique. Suspendisse sodales libero dui. Aliquam cursus ipsum in sapien ullamcorper ultricies. Vivamus hendrerit consequat aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin quis ex enim. Morbi semper turpis eget est sagittis rhoncus. Praesent laoreet nulla at pharetra tempor.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- About --> 
+
+	<section class="ourservices" id="ourservices">
+		<div class="container">
+			<div class="row">
+				<h1 class="text-center text-uppercase">Our Services</h1>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+			<div class="col-md-4">			
+				<img src="image/ourservices1.png">
+			</div>
+			<div class="col-md-4">			
+				<img src="image/ourservices2.png">
+			</div>
+			<div class="col-md-4">			
+				<img src="image/ourservices3.png">
+			</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+			<div class="col-md-4">			
+				<img src="image/ourservices4.png">
+			</div>
+			<div class="col-md-4">			
+				<img src="image/ourservices5.png">
+			</div>
+			<div class="col-md-4">			
+				<img src="image/ourservices6.png">
+			</div>
+			</div>
+		</div>
+
+	</section>
+
+<!-- Our Services -->
+
+	<section class="ourprices" id="ourprices">
+		<div class="container">
+			<div class="row">
+				<h1 class="text-center text-uppercase">Our Prices</h1>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="pricingtable">
+						<h3 class="title">Monthly Packages</h3>
+						<div class="price-value">
+							<span class="month">Per Month</span>
+							<span class="amount">Rp 300k</span>							
+						</div>
+						<ul class="pricing-content">
+							<p>Capacity : 50kg</p><br>
+							<p>Monthly Shuttle : 8 times</p><br>
+							<p>Estimated Work : 1x24 hours</p><br>
+							<p>Separate Wash</p><br>
+							<p>Clean and Fragrant</p><br>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="pricingtable">
+						<h3 class="title">Monthly Packages</h3>
+						<div class="price-value">
+							<span class="month">Per Month</span>
+							<span class="amount">Rp 300k</span>							
+						</div>
+						<ul class="pricing-content">
+							<p>Capacity : 50kg</p><br>
+							<p>Monthly Shuttle : 8 times</p><br>
+							<p>Estimated Work : 1x24 hours</p><br>
+							<p>Separate Wash</p><br>
+							<p>Clean and Fragrant</p><br>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="pricingtable">
+						<h3 class="title">Monthly Packages</h3>
+						<div class="price-value">
+							<span class="month">Per Month</span>
+							<span class="amount">Rp 300k</span>							
+						</div>
+						<ul class="pricing-content">
+							<p>Capacity : 50kg</p><br>
+							<p>Monthly Shuttle : 8 times</p><br>
+							<p>Estimated Work : 1x24 hours</p><br>
+							<p>Separate Wash</p><br>
+							<p>Clean and Fragrant</p><br>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+<!-- Our Prices -->
+
+	<section class="testimonials" id="testimonials">
+		<div class="container">
+			<div class="row">
+			<h1 class="text-center text-uppercase">Testimonials</h1>
+			</div>				
+		</div>
+				<div class="container">
+				<div class="row">
+				<div class="col-md-12">
+					<div id="carousel-testimonials" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-testimonials" data-slide-to="1"></li>	
+							<li data-target="#carousel-testimonials" data-slide-to="2"></li>
+
+						</ol>
+
+						<div class="carousel-inner">
+							<div class="item active text-center">
+								<img src="image/customer-1.png" class="center-block">
+								<h2>Ferry Andeska</h2>
+								<h4>PIC Data Entry <span>Intensive Watch ID</span></h4>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique sollicitudin orci, ut laoreet velit facilisis quis.<br> Morbi egestas magna non felis egestas tristique. Suspendisse sodales libero dui.
+								</p>
+							</div>
+							
+							<div class="item text-center">
+								<img src="image/customer-1.png" class="center-block">
+								<h2>Ferry Andeska</h2>
+								<h4>PIC Data Entry <span>Intensive Watch ID</span></h4>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique sollicitudin orci, ut laoreet velit facilisis quis.<br> Morbi egestas magna non felis egestas tristique. Suspendisse sodales libero dui.
+								</p>
+							</div>
+							
+							<div class="item text-center">
+								<img src="image/customer-1.png" class="center-block">
+								<h2>Ferry Andeska</h2>
+								<h4>PIC Data Entry <span>Intensive Watch ID</span></h4>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique sollicitudin orci, ut laoreet velit facilisis quis.<br> Morbi egestas magna non felis egestas tristique. Suspendisse sodales libero dui.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+
+<!-- Our Prices -->
+
+	<section class="contact" id="contact">
+		<h1 class="text-center text-uppercase">Contact</h1>
+		<div id="fandeska" style="height:50px; margin-left:110px"></div>
+		<div class="container">
+		<div class="row">
+		<div class="col-md-6">
+		<input type="text" placeholder="your name" class="form-control" id="name"><br>
+		
+		<input type="text" placeholder="no. handphone" class="form-control" id="handphone"><br>
+
+		<input type="text" placeholder="email" class="form-control" id="email"><br>
+
+		<textarea placeholder="messages" class="form-control" rows="6"></textarea><br>
+		<input type="button" value="Submit" class="btn" onclick="validate()">
+		</div>
+		<div class="col-md-6">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.78763732554174!2d106.94613129086822!3d-6.445093566849593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69956e3f65764d%3A0x77568610ef79e32a!2sKedai+Tugu!5e0!3m2!1sid!2sid!4v1521194118414" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+		</div>
+		</div>
+		
+	</section>
+
+<!-- Contact -->
+	
+<footer>
+	<section class="footer-first" id="footer-first">
+	<div class="container">
+		<div row>
+			<div class="col-md-4 text-center">
+          		<div class="footer-address">
+            		<h4><b>ADDRESS</b></h4>
+            		<p>	Kp. Tegal, Klapanunggal<br>
+              			Cileungsi, Bogor<br>
+              			16820<br><br>
+             		<h4><b>TEL</b></h4>
+             			021-123-4567
+            		</p>
+          		</div>
+        	</div>
+
+        	<div class="col-md-4 text-center">
+        		<div class="footer-email">
+        			<h4><b>EMAIL</b></h4>
+        			<p>info@fandeskalaundry.com</p><br>
+        			<h4><b>OPENING HOURS</b></h4>
+        			<p>
+        				Mon - Fri: 8am - 8pm<br>
+​​						Saturday: 9am - 7pm<br>
+​​						Sunday: 9am - 8pm<br>
+					</p>
+        		</div>
+        	</div>
+
+        	<div class="col-md-4 text-center">
+        		<div class="footer-social">
+        			<h4><b>Social</b></h4><br>
+            			<div class="social-icon">
+            			<a href="https://www.facebook.com/ferry.andeska.5" target="_blank"><i class="fa fa-facebook"></i></a>
+            			<a href="https://twitter.com/fandeska_" target="_blank"><i class="fa fa-twitter"></i></a>
+            			<a href="https://www.instagram.com/fandeska/" target="_blank"><i class="fa fa-instagram"></i></a>
+        				</div>
+        		</div>
+			</div>
+		</div>		
+	</section>
+
+	<section id="footer-second">
+    	<p class="text-center">&copy; 2018 by Fandeska Laundry</p>
+  	</section>
+</footer>
+
+	<script>
+    $(function() {
+      // Smooth Scrolling
+      $('a[href*="#"]:not([href="#"]').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+    location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+  </script>
+
+      <script src="js/main.js" type="text/javascript"></script>
+      <script src="js/jquery.slicknav.min.js" type="text/javascript"></script>
+  </body>
+</html>

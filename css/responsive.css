@@ -1,0 +1,75 @@
+.slicknav_menu {
+  display: none;
+}
+
+@media screen and (max-width:992px) {
+  #menu
+  {
+    display: none;
+  }
+
+  .slicknav_menu {
+    display: inline-block;
+    position: fixed;
+    background: transparent;
+    z-index: 1000;
+    right: 0;  
+  }
+
+  header { 
+    background-color: black;
+  }
+  .slider {
+    margin-top: -110px;
+  }
+  .slicknav_btn {
+    margin: 25px 25px 0px 0px;
+    background: yellow;
+  }
+  .slicknav_nav {
+    background: black;
+    width: 180px;
+  }
+  .slicknav_nav li {
+    margin: 0;
+    padding: 0;
+    height: 3em;
+    line-height: 3em;
+    width: 200px;
+    border-bottom: 1px solid yellow;
+    border-top: 1px solid yellow;
+    text-align: center;
+  }
+  .slicknav_nav li a {
+    color: yellow;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    transition: all 0.5s ease-in;
+  }
+  .slicknav_nav li a:hover {
+    color: white;
+    text-decoration: none;
+    background: none;
+  }
+
+}
+
+@media screen and (max-width:992px) {
+
+  .about img {
+    margin-left: 150px;
+  }
+
+  .ourservices img {
+  width: 30%;
+  margin-left: 220px;
+  }
+
+}
+
+@media screen and (max-width:775px) {
+  .logo img {
+    margin: 0px 0px 0px 25px;
+  }
+}

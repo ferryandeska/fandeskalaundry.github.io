@@ -1,0 +1,316 @@
+*,html,body {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  overflow-x: hidden;
+  height: 2000px;
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Bungee Inline', cursive;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.secondary {
+  background-color: black;
+}
+
+header {
+  height: 90px;
+  line-height: 90px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul li a {
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+header nav ul li a {
+  font-family: 'Bungee Inline', cursive;
+  color: yellow;
+  transition: all 0.5s ease-in;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* Nav */
+
+.img1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.7)),url(..//image/banner1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.img2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.7)),url(..//image/banner2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.img3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.7)),url(..//image/banner3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.home ul li {
+  font-family: 'Bungee Inline', cursive;
+  width: 100%;
+  height: 700px;
+}
+
+.white {
+  color: yellow;
+}
+
+.home h1 {
+  margin-top: 250px;
+  font-weight: bold;
+  font-size: 75px;
+}
+
+/* Header */
+
+.about {
+  margin-bottom: 80px;
+}
+
+.about h1 {
+  font-family: 'Bungee Inline', cursive;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.about img {
+  width: 75%;
+}
+
+.about h2 {
+  margin-top: 40px;
+  font-family: 'Bungee Inline', cursive;
+}
+
+.about p {
+  font-family: 'Roboto', sans-serif
+}
+
+/* About */
+
+.ourservices {
+  background: #F5F5F5;
+  padding-bottom: 50px;
+
+}
+
+.ourservices h1 {
+  font-family: 'Bungee Inline', cursive;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.ourservices img {
+  margin-left: 130px;
+  margin-bottom: 50px;
+}
+
+/* Our Services */
+
+.ourprices {
+  background-color: white;
+  margin-top: 50px;
+}
+
+.ourprices h1 {
+  font-family: 'Bungee Inline', cursive;
+  margin-bottom: 50px;
+}
+
+.pricingtable {
+  font-family: 'Bungee Inline', cursive;
+  text-align: center;
+  background: #D3D3D3;
+  padding: 30px 0;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2e282a;
+  text-transform: uppercase;
+  margin: 0 0 30px 0;
+}
+
+.price-value {
+  padding: 30px 0;
+  background: #778899;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.price-value:before {
+  content: "";
+  border-top: 15px solid #D3D3D3;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 46%;
+}
+
+.month {
+  display: block;
+  font-size: 15px;
+  font-weight: 900;
+  color: black;
+  text-transform: uppercase;
+}
+
+.amount {
+  display: block;
+  font-size: 25px;
+  color: black;
+  position: relative;
+}
+
+.pricing-content {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.pricing-content p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: black;
+  line-height: 20px;
+}
+
+/* Our Prices */
+
+.testimonials {
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(..//image/bg-testimonials.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  color: white;
+  margin-top: 80px;
+  background-attachment: fixed;
+}
+
+.testimonials h1 {
+  font-family: 'Bungee Inline', cursive;
+  color: yellow;
+  margin-bottom: 50px;
+}
+
+.testimonials .carousel-indicators {
+  bottom: -60px;
+}
+
+.carousel-inner img {
+  border-radius: 100%;
+  border:2px solid yellow; 
+  padding: 5px;
+}
+
+.carousel-inner h2 {
+  font-family: 'Bungee Inline', cursive;
+  color: yellow;
+}
+
+.carousel-inner h4 {
+  font-family: 'Bungee Inline', cursive;
+  color: yellow;
+}
+
+.carousel-inner p {
+  font-family: 'Roboto', sans-serif;
+  color: yellow;
+}
+
+/* Testimonials */
+
+.contact {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.contact h1 {
+  font-family: 'Bungee Inline', cursive;
+}
+
+.btn {
+  background-color: yellow;
+  height: 40px;
+}
+
+.btn a {
+  border: 1px solid black;
+}
+
+/* Contact */
+
+footer {
+  background: black;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.footer-first {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: yellow;
+}
+
+.footer-first h4 {
+  font-family: 'Bungee Inline', cursive;
+}
+
+.footer-social i {
+  font-size: 240%;
+  color: yellow;
+  margin-right: 25px;
+  transition: all 0.5s ease-in;
+}
+
+.social-icon i:hover {
+  color: white;
+}
+
+#footer-second {
+  border-top: 1px solid yellow;
+  padding-top: 15px;
+}
+
+#footer-second p {
+  color: yellow;
+}
